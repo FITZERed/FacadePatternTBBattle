@@ -3,6 +3,9 @@ using UnityEngine.InputSystem.LowLevel;
 
 public class Movement : MonoBehaviour
 {
+    // The player only sees the Facade script because he doesn't need to know about
+    // anything more. This script will only call the desired door's facade, and it
+    // will handle everything that's needed.
     private DoorFacade nearbyDoor;
     [SerializeField] private Transform transform;
 

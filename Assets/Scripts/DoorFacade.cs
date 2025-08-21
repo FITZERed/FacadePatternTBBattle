@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class DoorFacade : MonoBehaviour
 {
+    // A simple example for Facade. DoorFacade manages disabling the collider,
+    // visually moving the door sprite, and playing the sound
+    // and the player only interacts with it.
     [SerializeField] private DoorSound sound;
     [SerializeField] private DoorMover mover;
     [SerializeField] private DoorCollider collider;
